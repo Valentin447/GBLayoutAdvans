@@ -1,0 +1,327 @@
+.brand {
+  display: flex;
+  max-height: 765px;
+  height: 48vw;
+  background: $light-gray;
+  
+  &__left {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+
+  &__foto {
+    height: 100%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    min-height: 363px;
+
+    align-items: center;
+    width: 49%;
+    justify-content: left;
+  }
+
+  &__heading-wrap {
+    border-left: $red 12px solid;
+    padding-left: 16px;
+    margin-left: 64px;
+    cursor: default;
+  }
+
+  &__heading-top {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+
+  &__heading-bottom {
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__fashion {
+    color: $red;
+  }
+}
+
+.offer {
+  display: grid;
+  grid-row-gap: 5%;
+  justify-content: space-between;
+  padding: 15px 0;
+  color: #fff;
+  margin-top: 49px;
+  grid-template: auto 15vw / 32% 32% 32%;
+
+  & h3 {
+    text-align: center;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  & h3 strong {
+    color: $red;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  & section {
+    background-size: cover;
+    position: relative;
+  }
+
+  &__women,
+  &__men,
+  &__kids {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__women-img,
+  &__men-img,
+  &__kids-img {
+    width: 100%;
+  }
+
+  &__women-text,
+  &__men-text,
+  &__kids-text {
+    position: absolute;
+  }
+
+  &__accesories {
+    grid-column: 1 / -1;
+    max-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/background/accesories1.jpg) no-repeat center;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+.featured-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 97px;
+
+  &__head {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 6px;
+    cursor: default;
+  }
+
+  &__description {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    cursor: default;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px 0 65px;
+    justify-content: space-between;
+    row-gap: 2vw;
+  }
+
+  &__product-card {
+    width: 32%;
+    background-color: $light-gray;
+  }
+
+  &__product-card figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__product-img {
+    width: 100%;
+  }
+
+  &__top {
+    position: relative;
+  }
+
+  &__cart {
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .4s;
+  }
+
+  &__cart:hover {
+    opacity: 1;
+  }
+
+  &__cart:focus-within {
+    opacity: 1;
+  }
+
+  &__cart-button {
+    width: 139px;
+    height: 44px;
+    border: 2px solid #fff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  &__cart-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__cart-button img {
+    margin-right: 10px;
+    width: 26px;
+    height: 24px;
+  }
+
+  &__info {
+    padding: 23px 16px 20px;
+  }
+
+  &__info-header {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 13px;
+    cursor: default;
+  }
+
+  &__info-description {
+    color: $gray;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 18px;
+    cursor: default;
+  }
+
+  &__info-price {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $red;
+    cursor: default;
+  }
+
+  &__button {
+    width: 212px;
+    height: 48px;
+    color: $red;
+    background-color: #fff;
+    border: 1px solid $red;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  &__button:hover {
+    color: #fff;
+    background-color: $red;
+  }
+}
+
+.servises {
+  background-color: #222224;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 103px 15px;
+    max-width: 360px;
+    height: 134px;
+  }
+
+  &__icon-car {
+    height: 32px;
+  }
+
+  &__icon-sales {
+    height: 40px;
+  }
+
+  &__icon-crown {
+    height: 35px;
+  }
+
+  &__item-header {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    text-align: center;
+    color: $light-gray;
+    margin-bottom: 16px;
+    cursor: default;
+  }
+
+  &__item-description {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: $light-gray;
+    cursor: default;
+  }
+}
+

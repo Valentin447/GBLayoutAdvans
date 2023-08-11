@@ -1,0 +1,161 @@
+@media (max-width: 1200px) {
+  .header__container {
+    padding: 0 32px;
+  }
+
+  .brand {
+    padding-right: 32px;
+  }
+
+  .footer-top__wrap {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .featured-items__product-card_display {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brand__left::before {
+    background-color: #F1E4E6;
+  }
+
+  .brand__heading-wrap {
+    margin-left: 39px;
+  }
+
+  .brand__heading-bottom {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand {
+    height: auto;
+
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .featured-items__product-card {
+    width: 49%;
+  }
+
+  .featured-items__cards {
+    column-gap: 2%;
+  }
+
+  .servises__list {
+    flex-direction: column;
+    padding: 24px 0 40px;
+  }
+
+  .servises__item {
+    margin: 24px 15px;
+  }
+
+  .footer-top {
+    &__backlight {
+      padding: 64px 0 110px;
+      height: 100%;
+    }
+
+    &__wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__recall {
+      margin: 64px 0 59px;
+    }
+
+    &__subscribe-header {
+      font-size: 14px;
+    }
+  }
+
+  .footer-bottem__wrap {
+    flex-direction: column-reverse;
+    height: 143px;
+    padding: 43px 0 9px;
+  }
+  .new-arrivals__container {
+    flex-direction: column;
+  }
+  .new-arrivals__text{
+    margin-top: 24px;
+  }
+  .new-arrivals__breadcrumb{
+    margin-bottom: 46px;
+  }
+  .product-info__price {
+    width: 175px;
+  }
+  .product-info__settings-item {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__user,
+    &__cart-wrap {
+      display: none;
+    }
+
+    &__right {
+      width: auto;
+    }
+  }
+
+  .brand {
+    &__heading-top {
+      font-size: 38px;
+      line-height: 38px;
+    }
+
+    &__heading-bottom {
+      font-size: 20px;
+    }
+
+    &__heading {
+      font-size: 24px;
+    }
+  }
+
+  .offer {
+    grid-template: 2fr 2fr 2fr 1fr / 100%;
+    grid-row-gap: 32px;
+    max-width: 365px;
+    margin: 0 auto;
+    cursor: default;
+  }
+
+  .featured-items {
+    margin-top: 64px;
+
+    &__cards {
+      row-gap: 4vw;
+    }
+
+    &__product-card {
+      min-width: 270px;
+      max-width: 365px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-top__recall {
+    width: 190px;
+  }
+}
