@@ -690,6 +690,9 @@ figure {
 .filters {
   position: relative;
   height: 43px;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .filter {
@@ -797,10 +800,6 @@ figure {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-}
-.sort__summary {
-  display: flex;
-  align-items: center;
 }
 
 .pagination {
@@ -931,6 +930,10 @@ figure {
     font-size: 10px;
     line-height: 12px;
   }
+  .sort {
+    left: auto;
+    right: 16px;
+  }
 }
 @media (max-width: 576px) {
   .header__user, .header__cart-wrap {
@@ -967,6 +970,9 @@ figure {
     max-width: 365px;
     width: 100%;
     margin: 0 auto;
+  }
+  .sort__summary-text {
+    font-size: 12px;
   }
   .footer-top__recall {
     width: 190px;
