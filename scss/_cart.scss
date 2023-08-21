@@ -27,13 +27,20 @@
 					display: flex;
 					position: relative;
 					box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
-          height: 306px;
+          max-height: 306px;
+
+          &-img {
+            max-width: 262px;
+          }
 
 					&-description {
 						padding: 22px 97px 62px 31px;
 						display: flex;
 						flex-direction: column;
 						gap: 42px;
+            flex-grow: 1; 
+            flex-shrink: 0;
+
 
 						&-title {
 							max-width: 262px;

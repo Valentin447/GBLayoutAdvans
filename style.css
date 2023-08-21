@@ -45,13 +45,18 @@
   display: flex;
   position: relative;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
-  height: 306px;
+  max-height: 306px;
+}
+.cart__wrapper .left-side .cards-list__card-img {
+  max-width: 262px;
 }
 .cart__wrapper .left-side .cards-list__card-description {
   padding: 22px 97px 62px 31px;
   display: flex;
   flex-direction: column;
   gap: 42px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .cart__wrapper .left-side .cards-list__card-description-title {
   max-width: 262px;
