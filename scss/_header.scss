@@ -1,11 +1,18 @@
 .header {
   height: 74px;
   background-color: #222;
+  position: relative;
 
   & img {
     height: max-content;
   }
+  &__icon-svg path{
+    transition: fill .3s;
+  }
 
+  &__icon-svg:hover path{
+    fill: $red;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
@@ -19,11 +26,11 @@
     display: flex;
     height: max-content;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__left {
     width: 111px;
+    justify-content: space-between;
   }
 
   &__search {
@@ -32,16 +39,9 @@
     cursor: pointer;
   }
 
-  &__icon-svg path {
-    transition: fill 0.3s;
-  }
-
-  &__icon-svg:hover path {
-    fill: $red;
-  }
-
   &__right {
-    width: 169px;
+    justify-content: end;
+    gap: 33px;
   }
 
   &__burger {

@@ -1,0 +1,90 @@
+.burger{
+  font-family: "Lato", sans-serif;
+
+  &__icon-svg path {
+    transition: fill 0.3s;
+  }
+
+  &__icon-svg:hover path {
+    fill: $red;
+  }
+  &__nav{
+    z-index: 10;
+    width: 232px;
+    position: absolute;
+    right: -232px;
+    top: 74px;
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right .3s;
+  }
+  &__checkbox:checked ~ &__nav{
+    left: auto;
+    right: 0;
+  }
+  &__checkbox{
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+  }
+  &__menu-label{
+    cursor: pointer;
+  }
+  &__menu-button-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 3px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  &__menu-h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    cursor: default;
+  }
+  
+  &__menu ul {
+    list-style: none;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  &__menu-lists {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  &__menu-lists ul {
+    padding-left: 22px;
+    list-style: none;
+  }
+  
+  &__menu-lists li {
+    padding: 9px 0px;
+    cursor: default;
+  }
+  &__menu-link {
+    text-decoration: none;
+    color: $gray;
+  }
+  &__menu-link:hover{
+    color: $red;
+  }
+  &__menu-lists span {
+    text-transform: uppercase;
+    color: $red;
+  }
+  &__close-svg:hover line{
+    stroke: $red;
+  }
+}
+

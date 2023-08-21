@@ -103,6 +103,10 @@
     font-size: 10px;
     line-height: 12px;
   }
+  .sort{
+    left: auto;
+    right: 16px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -154,7 +158,9 @@
       margin: 0 auto;
     }
   }
-
+  .sort__summary-text{
+    font-size: 12px;
+  }
   .footer-top__recall {
     width: 190px;
   }

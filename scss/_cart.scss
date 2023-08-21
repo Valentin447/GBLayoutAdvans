@@ -1,0 +1,217 @@
+.cart {
+	margin: 96px 0 128px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.left-side {
+			display: flex;
+			flex-direction: column;
+			gap: 72px;
+
+			.cards-list {
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+
+				&__card {
+					display: flex;
+					position: relative;
+					box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+          height: 306px;
+
+					&-description {
+						padding: 22px 97px 62px 31px;
+						display: flex;
+						flex-direction: column;
+						gap: 42px;
+
+						&-title {
+							max-width: 262px;
+							font-size: 24px;
+              cursor: default;
+						}
+
+						&-text-block {
+							display: flex;
+							flex-direction: column;
+							gap: 6px;
+              cursor: default;
+
+							p {
+								font-size: 22px;
+								color: $gray;
+							}
+
+							&_redspan {
+								color: $red;
+							}
+
+							&_greyspan {
+								color: $gray;
+							}
+
+							&-input {
+								width: 28px;
+								margin-left: 24px;
+								padding-left: 16px;
+								color: $gray;
+								font-family: "Lato", sans-serif;
+								font-size: 18px;
+								font-weight: 400;
+							}
+						}
+					}
+
+					&-close {
+						position: absolute;
+						top: 28px;
+						right: 22px;
+						background: none;
+						border: none;
+						cursor: pointer;
+						outline: none;
+						transition: all 0.2s ease-in-out;
+
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+				}
+			}
+
+			.cards-buttons {
+				display: flex;
+				justify-content: space-between;
+
+				&__btn {
+					background: none;
+					cursor: pointer;
+					border: 1px solid $light-gray;
+					padding: 17px 40px;
+					font-weight: 300;
+					font-size: 14px;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						background: $red;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.right-side {
+			width: 360px;
+			display: flex;
+			flex-direction: column;
+			gap: 57px;
+
+			.cart-form {
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				gap: 20px;
+        cursor: default;
+
+				&__title {
+					font-size: 16px;
+					font-weight: 300;
+				}
+
+				&__input {
+					width: 327px;
+					padding: 15px 15px;
+					font-family: "Lato", sans-serif;
+					font-size: 13px;
+					font-weight: 300;
+
+					&::placeholder {
+						color: $gray;
+					}
+				}
+
+				&__btn {
+					color: $gray;
+					font-size: 11px;
+					font-weight: 300;
+					padding: 11px 15px;
+					background: none;
+					border: 1px solid $light-gray;
+					cursor: pointer;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						background: $red;
+						color: #fff;
+					}
+				}
+			}
+
+			.total {
+				background: #f5f3f3;
+				display: flex;
+				flex-direction: column;
+				align-items: end;
+				padding: 41px 43px;
+
+				&__subtotal {
+					color: $gray;
+					font-size: 11px;
+					margin-bottom: 12px;
+          cursor: default;
+
+					&_margin-left {
+						margin-left: 30px;
+					}
+				}
+
+				&__grandtotal {
+					margin-bottom: 21px;
+					font-size: 16px;
+					font-weight: 300;
+          cursor: default;
+
+					&_margin-left {
+						margin-left: 30px;
+						color: $red;
+						font-weight: 700;
+					}
+				}
+
+				&__line {
+					width: 275px;
+					height: 1px;
+					background-color: #e2e2e2;
+					margin-bottom: 17px;
+				}
+
+				&__btn {
+					background: $red;
+					border: 1px solid rgba(0, 0, 0, 0);
+					padding: 15px 40px;
+					color: #fff;
+					font-size: 16px;
+					font-weight: 300;
+					cursor: pointer;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						background: none;
+						color: #000;
+						border: 1px solid $red;
+					}
+				}
+			}
+		}
+	}
+}

@@ -24,25 +24,29 @@
     cursor: default;
   }
   
-  &__breadcrumb {
+  &__breadcrumbs {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
   }
-  
+
+  &__breadcrumbs a:not(:last-child)::after{
+    content: "/";
+    padding: 0 5px;
+  }
+
+  &__breadcrumbs a:last-child{
+    color: $red;
+    font-weight: 700;
+  }
+
   &__link {
     text-decoration: none;
     color: $gray;
   }
-  
-  &__link_last {
-    color: $red;
-    font-weight: 700;
-  }
 }
-
 .slider {
   position: relative;
   background-color: #F7F7F7;
