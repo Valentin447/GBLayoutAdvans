@@ -126,10 +126,10 @@
   height: -moz-max-content;
   height: max-content;
   align-items: center;
-  justify-content: space-between;
 }
 .header__left {
   width: 111px;
+  justify-content: space-between;
 }
 .header__search {
   background: none;
@@ -137,7 +137,8 @@
   cursor: pointer;
 }
 .header__right {
-  width: 169px;
+  justify-content: end;
+  gap: 33px;
 }
 .header__burger {
   background: none;
@@ -410,6 +411,7 @@ figure {
   line-height: 17px;
   color: #9F9F9F;
   text-align: center;
+  margin-bottom: 57px;
   cursor: default;
 }
 .featured-items__cards {
