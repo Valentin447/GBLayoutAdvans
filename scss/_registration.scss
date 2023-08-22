@@ -1,0 +1,173 @@
+.container-registration {
+  display: flex;
+  padding: 64px 0 96px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin-right: 128px;
+
+  &__heading {
+    color: #222;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    cursor: default;
+  }
+
+  &__input {
+    &-first,
+    &-last,
+    &-email,
+    &-password {
+      height: 45px;
+      padding: 0 16px;
+      font-family: "Lato", sans-serif;
+      border: 1px solid #A4A4A4;
+    }
+
+    &-first::placeholder,
+    &-last::placeholder,
+    &-email::placeholder,
+    &-password::placeholder {
+      color: $gray;
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    &-first,
+    &-email {
+      margin-bottom: 20px;
+    }
+
+    &-last {
+      margin-bottom: 31px;
+    }
+
+    &-password {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__gender {
+    display: flex;
+    margin-bottom: 33px;
+
+    &-radio {
+      &-m,
+      &-f {
+        display: none;
+      }
+      &-label {
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-family: "Lato", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      &-img-m,
+      &-img-f {
+        height: 17px;
+        width: 17px;
+        border: 1px solid $gray;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      &-point-f,
+      &-point-m {
+        display: none;
+        height: 11px;
+        width: 11px;
+        background-color: $gray;
+        border-radius: 5px;
+      }
+
+      &-m:checked~&-img-m &-point-m {
+        display: block;
+      }
+
+      &-f:checked~&-img-f &-point-f {
+        display: block;
+      }
+    }
+  }
+  
+  &__text {
+    color: $gray;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 39px;
+    cursor: default;
+  }
+
+  &__button-submit {
+    box-sizing: border-box;
+    width: 167px;
+    height: 50px;
+    border: 1px solid $red;
+    color: #fff;
+    background-color: $red;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &-svg {
+      margin-left: 20px;
+      transition: fill .3s;
+    }
+    transition: all .3s;
+  }
+
+  &__button-submit:hover {
+    color: $red;
+    svg {
+      fill: $red;
+    }
+    background-color: #fff;
+  }
+}
+
+.perks {
+  color: #000;
+  font-family: "Lato", sans-serif;
+
+  &__heading {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__text,
+  &__heading,
+  &__list-item {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 22px;
+    cursor: default;
+  }
+
+  &__list-item::before {
+    content: "";
+    display: inline-block;
+    margin-right: 22px;
+    width: 20px;
+    height: 16px;
+    background-image: url("./../images/icons/mark.svg");
+  }
+}
