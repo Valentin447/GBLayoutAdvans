@@ -1274,7 +1274,7 @@ figure {
   margin-right: 22px;
   width: 20px;
   height: 16px;
-  background-image: url("./../images/icons/mark.svg");
+  background-image: url("images/icons/mark.svg");
 }
 
 @media (max-width: 1200px) {
