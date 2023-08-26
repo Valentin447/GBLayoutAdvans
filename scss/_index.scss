@@ -3,7 +3,7 @@
   max-height: 765px;
   height: 48vw;
   background: $light-gray;
-  
+
   &__left {
     display: flex;
     justify-content: end;
@@ -57,7 +57,8 @@
   padding: 15px 0;
   color: #fff;
   margin-top: 49px;
-  grid-template: auto 15vw / 32% 32% 32%;
+  margin-bottom: 97px;
+  grid-template: 13fr 9fr / 32% 32% 32%;
 
   & h3 {
     text-align: center;

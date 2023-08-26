@@ -13,12 +13,15 @@
 }
 
 .filter {
-  padding: 13px 16px 16px;
+  padding: 13px 0 16px;
   position: absolute;
   top: 0;
-  z-index: 1;
-
+  z-index: 100;
+  &__icon-m {
+    display: none;
+  }
   &[open] {
+    padding: 13px 16px 16px;
     background-color: #fff;
     filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
     max-width: 360px;
@@ -31,6 +34,9 @@
   }
 
   &[open] &__icon path {
+    fill: $red;
+  }
+  &[open] &__icon-m path {
     fill: $red;
   }
 
@@ -83,28 +89,28 @@
     font-weight: 400;
     text-decoration: none;
   }
-  &__link:hover{
+  &__link:hover {
     color: $red;
   }
 }
 
-.sort{
+.sort {
   display: flex;
   position: absolute;
   gap: 28px;
   left: 390px;
 
-  &__item{
+  &__item {
     position: relative;
     cursor: pointer;
   }
 
-  &__summary{
+  &__summary {
     display: flex;
     align-items: center;
   }
 
-  &__summary-text{
+  &__summary-text {
     margin-right: 10px;
     color: $gray;
     font-family: "Lato", sans-serif;
@@ -112,7 +118,7 @@
     font-weight: 400;
   }
 
-  &__box{
+  &__box {
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -124,7 +130,7 @@
     z-index: 5;
   }
 
-  &__check{
+  &__check {
     display: flex;
     gap: 9px;
     color: $gray;
@@ -165,23 +171,20 @@
     margin-left: 20px;
     cursor: pointer;
   }
-  
+
   &__pages-number_active {
     color: #EF5B70;
   }
-  
+
   &__pages-number:first-of-type {
     margin-left: 0;
   }
-  
+
   &__pages-number_points {
     margin-left: 0;
   }
-  
+
   &__pages-number_points::before {
     content: ".....";
   }
 }
-
-
-
